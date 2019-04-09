@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>
+  
+  <servlet>
+    <servlet-name>LookServlet</servlet-name>
+    <servlet-class>com.bookservlet.LookServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddBookServlet</servlet-name>
+    <servlet-class>com.bookservlet.AddBookServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FindBookByIdServlet</servlet-name>
+    <servlet-class>com.bookservlet.FindBookByIdServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateBookServlet</servlet-name>
+    <servlet-class>com.bookservlet.UpdateBookServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteBookServlet</servlet-name>
+    <servlet-class>com.bookservlet.DeleteBookServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteAllServlet</servlet-name>
+    <servlet-class>com.bookservlet.DeleteAllServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FindProductByManyCondition</servlet-name>
+    <servlet-class>com.bookservlet.FindProductByManyCondition</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PageServlet</servlet-name>
+    <servlet-class>com.bookservlet.PageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetBookinfoServlet</servlet-name>
+    <servlet-class>com.bookservlet.GetBookinfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SearchAJAXInfoServlet</servlet-name>
+    <servlet-class>com.bookservlet.SearchAJAXInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddCardServlet</servlet-name>
+    <servlet-class>com.bookservlet.AddCardServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ChangeCountServlet</servlet-name>
+    <servlet-class>com.bookservlet.ChangeCountServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>text</servlet-name>
+    <servlet-class>com.bookservlet.text</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>LookServlet</servlet-name>
+    <url-pattern>/lookServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddBookServlet</servlet-name>
+    <url-pattern>/addBookServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindBookByIdServlet</servlet-name>
+    <url-pattern>/findBookByIdServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateBookServlet</servlet-name>
+    <url-pattern>/updateBookServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteBookServlet</servlet-name>
+    <url-pattern>/deleteBookServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteAllServlet</servlet-name>
+    <url-pattern>/deleteAllServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindProductByManyCondition</servlet-name>
+    <url-pattern>/findProductByManyCondition</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PageServlet</servlet-name>
+    <url-pattern>/pageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetBookinfoServlet</servlet-name>
+    <url-pattern>/getBookinfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchAJAXInfoServlet</servlet-name>
+    <url-pattern>/searchAJAXInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddCardServlet</servlet-name>
+    <url-pattern>/addCardServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangeCountServlet</servlet-name>
+    <url-pattern>/changeCountServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>text</servlet-name>
+    <url-pattern>/text</url-pattern>
+  </servlet-mapping>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

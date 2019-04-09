@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<!-- 编码过滤 -->
+	<filter>
+		<filter-name>EncodingFilter</filter-name>
+		<filter-class>com.bookstore.servlet.EncodingFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>EncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<!-- 管理员权限过滤 -->
+	<filter>
+		<filter-name>RoleRootAdminFitler</filter-name>
+		<filter-class>com.bookstore.until.RoleRootAdminFitler</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>RoleRootAdminFitler</filter-name>
+		<url-pattern>/admin/*</url-pattern>
+	</filter-mapping>
+	
+  <servlet>
+    <servlet-name>ImageCode</servlet-name>
+    <servlet-class>com.bookstore.servlet.ImageCode</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Register</servlet-name>
+    <servlet-class>com.bookstore.servlet.Register</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ActiveCode</servlet-name>
+    <servlet-class>com.bookstore.servlet.ActiveCode</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.bookstore.servlet.Login</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>MyAccount</servlet-name>
+    <servlet-class>com.bookstore.servlet.MyAccount</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Finduserinfo</servlet-name>
+    <servlet-class>com.bookstore.servlet.Finduserinfo</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Modifyuserinfo</servlet-name>
+    <servlet-class>com.bookstore.servlet.Modifyuserinfo</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>com.bookstore.servlet.Logout</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FindAllServlet</servlet-name>
+    <servlet-class>com.bookstore.web.servlet.FindAllServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddBook</servlet-name>
+    <servlet-class>com.bookstore.web.servlet.AddBook</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FindBookById</servlet-name>
+    <servlet-class>com.bookstore.web.servlet.FindBookById</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>EditBook</servlet-name>
+    <servlet-class>com.bookstore.web.servlet.EditBook</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteBook</servlet-name>
+    <servlet-class>com.bookstore.web.servlet.DeleteBook</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>EditBookNoUpload</servlet-name>
+    <servlet-class>com.bookstore.web.servlet.EditBookNoUpload</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FindProductByManyCondition</servlet-name>
+    <servlet-class>com.bookstore.web.servlet.FindProductByManyCondition</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowProductByPage</servlet-name>
+    <servlet-class>com.bookstore.servlet.ShowProductByPage</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>test</servlet-name>
+    <servlet-class>com.bookstore.servlet.getmethodtest</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ProductInfo</servlet-name>
+    <servlet-class>com.bookstore.servlet.ProductInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddCart</servlet-name>
+    <servlet-class>com.bookstore.servlet.AddCart</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ChangCount</servlet-name>
+    <servlet-class>com.bookstore.servlet.ChangCount</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>MyCart</servlet-name>
+    <servlet-class>com.bookstore.servlet.MyCart</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OrderServlet</servlet-name>
+    <servlet-class>com.bookstore.servlet.OrderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OrderFindByUser</servlet-name>
+    <servlet-class>com.bookstore.servlet.OrderFindByUser</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OrderFindInfo</servlet-name>
+    <servlet-class>com.bookstore.servlet.OrderFindInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OrderPayOnline</servlet-name>
+    <servlet-class>com.bookstore.servlet.OrderPayOnline</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Callback</servlet-name>
+    <servlet-class>com.bookstore.servlet.Callback</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>MyAccountorderPay</servlet-name>
+    <servlet-class>com.bookstore.servlet.MyAccountorderPay</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BasiServlet</servlet-name>
+    <servlet-class>com.userapplication.servlet.BasiServlet</servlet-class>
+  </servlet>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>ImageCode</servlet-name>
+    <url-pattern>/imageCode</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Register</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ActiveCode</servlet-name>
+    <url-pattern>/activeCode</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MyAccount</servlet-name>
+    <url-pattern>/myAccount</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Finduserinfo</servlet-name>
+    <url-pattern>/finduserinfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Modifyuserinfo</servlet-name>
+    <url-pattern>/modifyuserinfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindAllServlet</servlet-name>
+    <url-pattern>/findAllServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddBook</servlet-name>
+    <url-pattern>/addBook</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindBookById</servlet-name>
+    <url-pattern>/findBookById</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EditBook</servlet-name>
+    <url-pattern>/editBook</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteBook</servlet-name>
+    <url-pattern>/deleteBook</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EditBookNoUpload</servlet-name>
+    <url-pattern>/editBookNoUpload</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindProductByManyCondition</servlet-name>
+    <url-pattern>/findProductByManyCondition</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowProductByPage</servlet-name>
+    <url-pattern>/showProductByPage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>test</servlet-name>
+    <url-pattern>/test</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ProductInfo</servlet-name>
+    <url-pattern>/productInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddCart</servlet-name>
+    <url-pattern>/addCart</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangCount</servlet-name>
+    <url-pattern>/changCount</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MyCart</servlet-name>
+    <url-pattern>/myCart</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderServlet</servlet-name>
+    <url-pattern>/orderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderFindByUser</servlet-name>
+    <url-pattern>/orderFindByUser</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderFindInfo</servlet-name>
+    <url-pattern>/orderFindInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderPayOnline</servlet-name>
+    <url-pattern>/orderPayOnline</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Callback</servlet-name>
+    <url-pattern>/callback</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MyAccountorderPay</servlet-name>
+    <url-pattern>/myAccountorderPay</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BasiServlet</servlet-name>
+    <url-pattern>/user</url-pattern>
+  </servlet-mapping>
+  
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
